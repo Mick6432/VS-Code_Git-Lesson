@@ -1,0 +1,10 @@
+1)  To check if git is installed and what version is running.
+        Open a terminal and type:
+                git --version
+
+2)  To push a local repository onto github
+        Open a terminal and type the following 2 commands:
+            (The address in the first command must match the location where you created
+             the repository on github.)
+                git remote add origin https://github.com/Mick6432/VS-Code_Git-Lesson.git
+                git push -u origin master
