@@ -1,10 +1,71 @@
-I)  To check if git is installed and what version is running.
-        Open a terminal and type:
-                git --version
 
-II)  To push a local repository onto github
+Github User Notes
+
+I)  To check if git is installed and what version is running.
+        Open a terminal window and type:
+                git --version
+		If the version returns you are good to go.
+		If not, git has to be installed on your computer.
+				
+II) Create Local Repository (On your machine.)
+		Within your working folder
+			Click on Initialize Repository (Referred to as a git init)
+			Click the (√) check to commit modified code to the repository.
+			(Type a message to yourself about the code you are commiting in the message box.)
+	-----------------------------------------------------------------------------------------------		
+		Side Note:
+			If running git for the first time on this computer your commit will fail.
+			Go to the output tab on the terminal window and find these 2 lines:
+			
+				git config --global user.email "you@example.com"
+				git config --global user.name "Your Name"
+				
+			Replace you@example.com with your github email address.
+			Replace Your Name with your github username.
+			
+				git config --global user.email "mick6432a@gmail.com"
+				git config --global user.name "Mick6432"
+				
+			Go back to the terminal window and type the above lines in one at a time.
+			(Could also cut and paste the lines right from here. Just do them one at a time.)
+			Then retry the commit.
+	-----------------------------------------------------------------------------------------------
+		To Undo last commit:
+			In the source control page choose the three dots at the top and pick Undo Last Commit.
+			
+III)Create Remote Repository (On Github)	
+		Sign in to Github.
+		Pick the drop down arrow next to your profile icon (upper right)
+		Choose settings and go to Repositories. This will give you a list of all your created repositories.
+		Go back to the top and pick the + drop down arrow and choose New Repository.
+		Give it a name and a description.
+		Make it Public. (Private costs money, Public is free.)
+		Do NOT check Initialize this Repository with a README.
+		Click Create Repository.
+		Copy the 2 lines:
+			git remote add origin https://github.com/Mick6432/DevU-Javascript.git
+			git push -u origin master
+		You will need them in the next step below.
+		
+IV) To Link a local repository on your machine to a remote repository on github
+		Make sure you are in the directory where you want to link the local repository
+		and the remote repository.
         Open a terminal and type the following 2 commands:
             (The address in the first command must match the location where you created
              the repository on github.)
-               1) git remote add origin https://github.com/Mick6432/VS-Code_Git-Lesson.git
+               1) git remote add origin https://github.com/Mick6432/[Name of repository created on github]
                2) git push -u origin master
+				EXAMPLE:
+					git remote add origin https://github.com/Mick6432/DevU-Javascript.git
+					git push -u origin master
+			   
+V)	Push the local repository to the remote repository.
+		In Visual Studio Code and in the version control tab.
+		Pick the three dots at the top and choose Push.
+		The two repositories are now synced.
+		This has to be done to Push the local repository to the remote repository. Commit only saves it
+		to the local repository.
+		
+VI) Getting code from Github to your computer.
+		
+			   
