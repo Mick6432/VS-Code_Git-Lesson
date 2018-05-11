@@ -67,5 +67,12 @@ V)	Push the local repository to the remote repository.
 		to the local repository.
 		
 VI) Getting code from Github to your computer.
-		
+		Clone a remote repository.
+			Make a directory on your local machine to download the remote repository to.
+			In Visual Studio Code hit Ctrl+Shift+P to open the Command Palette
+				Type Git:Clone
+			When asked copy the url address of the github repository you want to clone
+				(Should be https://github.com/github-username/directory-of-repository.git
+					Ex:
+						https://github.com/Mick6432/DevU-Javascript.git)
 			   
